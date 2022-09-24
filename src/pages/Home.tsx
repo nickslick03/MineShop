@@ -11,7 +11,7 @@ export const Home = () => {
                 We are the first website to accept emarlds as currency. Our prices will match or best any villager. Buy from us or you're a cube
             </div>
             <div>
-                <a href="#" className="text-lg hover:text-xl transition-all">
+                <a href="./products" className="text-lg hover:text-xl transition-all">
                     Browse Products -{">"}
                 </a>
             </div>

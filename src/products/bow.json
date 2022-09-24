@@ -1,0 +1,7 @@
+{
+    "name": "Bow",
+    "description": "Be a coward and attack your enemies from afar. Arrows not included.",
+    "price": 10,
+    "maxQuantity": 1,
+    "catagory": "Weapons"
+}
