@@ -12,7 +12,7 @@ export const Home = () => {
             </div>
             <div>
                 <a href="./products" className="text-lg hover:text-xl transition-all">
-                    Browse Products -{">"}
+                    Browse Products -{'>'}
                 </a>
             </div>
         </main>
