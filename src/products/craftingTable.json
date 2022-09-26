@@ -1,7 +1,0 @@
-{
-    "name": "Crafting Table",
-    "description": "If you don't know all the crafting reicipes by heart you're a n00b.",
-    "price": 4,
-    "maxQuantity": 64,
-    "catagory": "Furniture"
-}

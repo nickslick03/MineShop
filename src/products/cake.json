@@ -1,7 +1,0 @@
-{
-    "name": "Cake",
-    "description": "A cherry on top? That's new.",
-    "price": 10,
-    "maxQuantity": 1,
-    "catagory": "Food"
-}

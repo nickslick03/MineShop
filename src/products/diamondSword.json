@@ -1,7 +1,0 @@
-{
-    "name": "Diamond Sword",
-    "description": "The best sword the overworld has to offer.",
-    "price": 20,
-    "maxQuantity": 1,
-    "catagory": "Weapons"
-}

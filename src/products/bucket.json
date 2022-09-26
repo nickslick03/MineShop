@@ -1,7 +1,0 @@
-{
-    "name": "Bucket",
-    "description": "Fill it with water, lava, milk, or Fat Tire IPA.",
-    "price": 5,
-    "maxQuantity": 16,
-    "catagory": "tools"
-}
