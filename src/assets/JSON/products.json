@@ -1,6 +1,7 @@
 [
     {
         "name": "Bow",
+        "image": "Bow",
         "description": "Be a coward and attack your enemies from afar. Arrows not included.",
         "price": 10,
         "maxQuantity": 1,
@@ -8,6 +9,7 @@
     },
     {
         "name": "Bucket",
+        "image": "Bucket",
         "description": "Fill it with water, lava, milk, or Fat Tire IPA.",
         "price": 5,
         "maxQuantity": 16,
@@ -15,6 +17,7 @@
     },
     {
         "name": "Cake",
+        "image": "Cake",
         "description": "A cherry on top? That's new.",
         "price": 10,
         "maxQuantity": 1,
@@ -22,13 +25,15 @@
     },
     {
         "name": "Crafting Table",
+        "image": "Crafting_Table",
         "description": "If you don't know all the crafting reicipes by heart you're a n00b.",
         "price": 4,
         "maxQuantity": 64,
         "catagory": "Furniture"
     },
     {
-        "name": "Diamond Pixaxe",
+        "name": "Diamond Pickaxe",
+        "image": "Diamond_Pickaxe",
         "description": "Mine & collect any material conceivable. Except bedrock.",
         "price": 25,
         "maxQuantity": 1,
@@ -36,13 +41,15 @@
     },
     {
         "name": "Diamond Sword",
+        "image": "Diamond_Sword",
         "description": "The best sword the overworld has to offer.",
         "price": 20,
         "maxQuantity": 1,
         "catagory": "Weapons"
     },
     {
-        "name": "Enchantment Table",
+        "name": "Enchanting Table",
+        "image": "Enchanting_Table",
         "description": "Xp not included. Lapis Lazuli not included. Standard Galactic Alphabet translator not included.",
         "price": 30,
         "maxQuantity": 25,
@@ -50,6 +57,7 @@
     },
     {
         "name": "Steak",
+        "image": "Steak",
         "description": "Very very very well done.",
         "price": 5,
         "maxQuantity": 64,

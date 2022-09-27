@@ -4,26 +4,26 @@
 
 @font-face {
     font-family: "Minecraft";
-    src: url(./MinecraftRegular.otf);
+    src: url(../fonts/MinecraftRegular.otf);
 }
 
 @font-face {
     font-family: "Minecraft Bold";
-    src: url(./MinecraftBold.otf);
+    src: url(../fonts/MinecraftBold.otf);
 }
 
 @font-face {
     font-family: "Minecraft Italic";
-    src: url(./MinecraftItalic.otf);
+    src: url(../fonts/MinecraftBoldItalic.otf);
 }
 
 @font-face {
     font-family: "Minecraft Bold Italic";
-    src: url(./MinecraftBoldItalic.otf);
+    src: url(../fonts/MinecraftBoldItalic.otf);
 }
 
 :root {
     min-height: 100vh;
     font-family: 'Minecraft';
-    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .8)), url(./minecraft-wallpaper.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .8)), url(../imgs/minecraft-wallpaper.jpg);
 }
