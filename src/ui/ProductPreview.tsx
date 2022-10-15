@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { PriceDisplay } from "./PriceDisplay";
+import { CartItem } from "../hooks/useCart";
 
 export type productProps = {
     product: {
@@ -9,7 +10,7 @@ export type productProps = {
         price: number,
         maxQuantity: number,
         catagory: string,
-    }
+    },    
 }
 
 export const ProductPreview = ({ product: {

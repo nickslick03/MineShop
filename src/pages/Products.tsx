@@ -2,10 +2,13 @@ import {  useState } from "react";
 import { Header } from "../ui/Header";
 import products from "../assets/JSON/products.json";
 import { ProductPreview } from "../ui/ProductPreview";
+import { useCart } from "../hooks/useCart";
 
 export const Products = () => {
 
     const [ search, setSearch ] = useState('');
+
+    const [ cart, addToCart ] = useCart(); 
 
     return <>
         <Header />
