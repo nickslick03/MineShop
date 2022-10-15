@@ -20,11 +20,12 @@ export const Products = () => {
         <h1 className="text-center text-5xl m-10">
             Products
         </h1>
-        <div className="mx-4 mb-5 flex flex-wrap gap-4">
+        <div className="mx-4 mb-5 flex flex-wrap gap-4 justify-center">
             {
-                products.map((product) => 
-                    <ProductPreview product={product} />
-                )
+                products.map((product, index) => 
+                    <a href={`products/${product.image}`} key={index}>
+                        <ProductPreview product={product} />
+                    </a>)
             }
         </div>
     </>;
