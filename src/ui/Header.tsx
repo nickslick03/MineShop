@@ -1,6 +1,11 @@
+import { CartProps } from "../hooks/useCart";
 import { CartSidebar } from "./CartSidebar";
 
-export const Header = () => {
+export const Header = ({
+    cart,
+    addToCart,
+    removeFromCart
+}: CartProps) => {
     return <>
     <header className="flex px-6 mt-4 justify-between flex-wrap">
         <h1 className="text-orange-900 text-2xl">
@@ -8,7 +13,10 @@ export const Header = () => {
                 MineShop
             </a>
         </h1>
-        <CartSidebar /> 
+        <CartSidebar 
+        cart={cart}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}/> 
     </header>
     </>
 };

@@ -1,8 +1,16 @@
+import { CartProps } from "../hooks/useCart";
 import { Header } from "../ui/Header";
 
-export const Home = () => {
+export const Home = ({
+    cart,
+    addToCart,
+    removeFromCart
+}: CartProps) => {
     return <>
-        <Header />
+        <Header 
+        cart={cart}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}/>
         <main className="mt-40 mb-24 p-4 box-border flex gap-32 flex-col items-center justify-center">
             <div className="text-5xl text-center">
                 All your Minecraft needs in one website

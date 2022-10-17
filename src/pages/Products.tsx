@@ -2,16 +2,21 @@ import {  useState } from "react";
 import { Header } from "../ui/Header";
 import products from "../assets/JSON/products.json";
 import { ProductPreview } from "../ui/ProductPreview";
-import { useCart } from "../hooks/useCart";
+import { CartProps } from "../hooks/useCart";
 
-export const Products = () => {
+export const Products = ({
+    cart,
+    addToCart,
+    removeFromCart
+}: CartProps) => {
 
     const [ search, setSearch ] = useState('');
 
-    const [ cart, addToCart ] = useCart(); 
-
     return <>
-        <Header />
+        <Header 
+        cart={cart}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}/>
         <div className="text-center">
             <input 
             type="search" 
@@ -25,7 +30,10 @@ export const Products = () => {
         </h1>
         <div className="mx-4 mb-5 flex flex-wrap gap-4 justify-center">
             {
-                products.map((product, index) => 
+                products
+                .filter(({name, catagory}) =>
+                    name.toLowerCase().includes(search) || catagory.toLowerCase().includes(search))
+                .map((product, index) => 
                     <a href={`products/${product.image}`} key={index}>
                         <ProductPreview product={product} />
                     </a>)

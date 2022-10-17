@@ -3,24 +3,28 @@ import { Home } from "./pages/Home";
 import { Products } from "./pages/Products";
 import products from "./assets/JSON/products.json";
 import { ProductPage } from "./pages/ProductPage";
-import { AddToCart, CartItem, useCart } from "./hooks/useCart";
+import { useCart } from "./hooks/useCart";
 
 export const RouteSwitch = () => {
     
-    const [cart, addToCart] = useCart();
+    const { cart, addToCart, removeFromCart } = useCart();
     
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/products' element={<Products />} />
+                <Route path='/' element={<Home cart={cart} addToCart={addToCart} removeFromCart={removeFromCart}/>} />
+                <Route path='/products' element={<Products cart={cart} addToCart={addToCart} removeFromCart={removeFromCart}/>} />
                 {products.map((product, index) =>
                     <Route 
                     key={index} 
                     path={`/products/${product.image}`} 
-                    element={<ProductPage product={product} 
-                    cart={cart as CartItem[]}
-                    addToCart={addToCart as AddToCart}/>} />
+                    element={
+                            <ProductPage product={product} 
+                            cart={cart}
+                            addToCart={addToCart}
+                            removeFromCart={removeFromCart}/>
+                        } 
+                    />
                 )}
             </Routes>
         </BrowserRouter>
