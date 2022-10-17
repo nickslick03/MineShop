@@ -37,8 +37,6 @@ export const CartAndQuantity = ({
             setQuantity(cart.find(cartItem => cartItem.product.name === product.name)?.quantity as number)
     }, [cart]);
 
-    console.log(cart);
-
     return <>
         <button 
         className="block w-fit bg-green-700 text-white p-2 rounded-lg scale-1 hover:scale-110 transition-all"

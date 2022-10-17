@@ -3,6 +3,7 @@ import { Header } from "../ui/Header";
 import products from "../assets/JSON/products.json";
 import { ProductPreview } from "../ui/ProductPreview";
 import { CartProps } from "../hooks/useCart";
+import { Link } from "react-router-dom";
 
 export const Products = ({
     cart,
@@ -34,9 +35,9 @@ export const Products = ({
                 .filter(({name, catagory}) =>
                     name.toLowerCase().includes(search) || catagory.toLowerCase().includes(search))
                 .map((product, index) => 
-                    <a href={`products/${product.image}`} key={index}>
+                    <Link to={`/products/${product.image}`} key={index}>
                         <ProductPreview product={product} />
-                    </a>)
+                    </Link>)
             }
         </div>
     </>;

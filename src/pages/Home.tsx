@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CartProps } from "../hooks/useCart";
 import { Header } from "../ui/Header";
 
@@ -19,9 +20,9 @@ export const Home = ({
                 We are the first website to accept emeralds as currency. Our prices will match or best any villager. Buy from us or you're a cube
             </div>
             <div>
-                <a href="./products" className="text-lg hover:text-xl transition-all">
+                <Link to="./products" className="text-lg hover:text-xl transition-all">
                     Browse Products -{'>'}
-                </a>
+                </Link>
             </div>
         </main>
     </>;

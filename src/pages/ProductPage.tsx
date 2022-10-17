@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { CartProps } from "../hooks/useCart";
 import { CartAndQuantity } from "../ui/CartAndQuantity";
 import { Header } from "../ui/Header";
@@ -50,8 +51,8 @@ export const ProductPage = ({
                 maxQuantity={maxQuantity} />
             </div>
         </div>
-        <a href="/products" className="ml-24 text-base hover:text-lg transition-all">
+        <Link to="/products" className="ml-24 text-base hover:text-lg transition-all">
             {'<'}- Back to Products
-        </a>
+        </Link>
     </>;
 }
